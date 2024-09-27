@@ -1,6 +1,7 @@
 import { Button, Card } from "react-bootstrap";
 
 export default function Candidato(props) {
+    
     function aumentarCurtidas(candidato) {
         props.setListaCandidatos(props.listaCandidatos.map((item) =>
             item.id === candidato.id
@@ -22,7 +23,7 @@ export default function Candidato(props) {
         props.setCandidatoSel(candidato);
         props.setDetalharCandidato(true)
     }
-    
+
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" height="300" width="300" src={props.candidato.avatar} />

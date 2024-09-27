@@ -17,7 +17,8 @@ export default function GridCandidatos(props) {
                         listaCandidatos={props.listaCandidatos}
                         setListaCandidatos={props.setListaCandidatos}
                         setDetalharCandidato={props.setDetalharCandidato}
-                        setCandidatoSel={props.setCandidatoSel}/>
+                        setCandidatoSel={props.setCandidatoSel}
+                    />
                 ))}
             </div>
         )

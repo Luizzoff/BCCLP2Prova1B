@@ -38,7 +38,7 @@ export const listaCandidatos = [
         "propostas":["doloribus at sed quis culpa deserunt consectetur qui praesentium","accusamus fugiat dicta","voluptatem rerum ut voluptate autem","voluptatem repellendus aspernatur dolorem in"],
         "curtidas":0,
         "descurtidas":0,
-        "questionamentos":["test1", "test2"]
+        "questionamentos":[]
     },
     {
         "id": 5,

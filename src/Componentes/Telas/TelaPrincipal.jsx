@@ -18,6 +18,7 @@ export default function TelaPrincipal(props) {
         questionamentos:[]
     });
     const [ListaCandidatos, setListaCandidatos] = useState(listaCandidatos);
+    const [quest, setQuest] = useState(false);    
 
     return (
 
@@ -28,7 +29,9 @@ export default function TelaPrincipal(props) {
                     listaCandidatos={ListaCandidatos}
                     setListaCandidatos={setListaCandidatos}
                     setDetalharCandidato={setDetalharCandidato}
-                    candidatoSel={candidatoSel}/>
+                    candidatoSel={candidatoSel}
+                    quest={quest}
+                    setQuest={setQuest}/>
                 ) : (
                     <GridCandidatos
                     listaCandidatos={ListaCandidatos}
