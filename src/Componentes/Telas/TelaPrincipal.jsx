@@ -4,8 +4,11 @@ import DetalhesCandidato from "./DetalhesCandidato";
 import GridCandidatos from "./GridCandidatos";
 import { useState } from "react";
 import {listaCandidatos} from "../../dados/candidatos";
+
 export default function TelaPrincipal(props) {
     const [detalharCandidato, setDetalharCandidato]=useState(false)
+    const [ListaCandidatos, setListaCandidatos] = useState(listaCandidatos);
+
     return (
 
         <Pagina>
@@ -13,7 +16,9 @@ export default function TelaPrincipal(props) {
                 detalharCandidato ? (
                     <DetalhesCandidato />
                 ) : (
-                    <GridCandidatos listaCandidatos={listaCandidatos} />
+                    <GridCandidatos
+                    listaCandidatos={ListaCandidatos}
+                    setListaCandidatos={setListaCandidatos} />
                 )
             }
         </Pagina>
