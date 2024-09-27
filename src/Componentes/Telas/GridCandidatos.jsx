@@ -15,7 +15,9 @@ export default function GridCandidatos(props) {
                 {props.listaCandidatos.map((candidato) => (
                     <Candidato key={candidato.id} candidato={candidato}
                         listaCandidatos={props.listaCandidatos}
-                        setListaCandidatos={props.setListaCandidatos} />
+                        setListaCandidatos={props.setListaCandidatos}
+                        setDetalharCandidato={props.setDetalharCandidato}
+                        setCandidatoSel={props.setCandidatoSel}/>
                 ))}
             </div>
         )
